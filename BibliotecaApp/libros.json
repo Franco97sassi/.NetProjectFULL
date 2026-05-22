@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "Titulo": "Clean Code",
+    "Autor": "Robert C. Martin",
+    "Stock": 2,
+    "Precio": 25000,
+    "Activo": true
+  },
+  {
+    "Id": 2,
+    "Titulo": "C# Avanzado",
+    "Autor": "Microsoft",
+    "Stock": 0,
+    "Precio": 18000,
+    "Activo": true
+  }
+]
