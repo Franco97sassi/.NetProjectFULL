@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Wsk7N/VDQ1o=",
+  "dgSpecHash": "5cQnaOPfFzU=",
   "success": true,
   "projectFilePath": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa4\\BibliotecaApp.Etapa4.Infrastructure\\BibliotecaApp.Etapa4.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Franc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Franc\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\Franc\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

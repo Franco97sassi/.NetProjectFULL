@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaApp.Etapa4.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be915038041031fe35ba1bf64b2b5860d84d7447")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86c172f71f701b2ef05a34b648849252a14e2787")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaApp.Etapa4.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaApp.Etapa4.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

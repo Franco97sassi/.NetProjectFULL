@@ -16,6 +16,5 @@ public class BookRepository(BibliotecaDbContext context) : IBookRepository
     public async Task AddAsync(Book book, CancellationToken ct = default)
         => await context.Books.AddAsync(book, ct);
 
-    public Task SaveChangesAsync(CancellationToken ct = default)
-        => context.SaveChangesAsync(ct);
+  
 }

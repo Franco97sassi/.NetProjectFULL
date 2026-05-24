@@ -10,6 +10,8 @@
         "dependencies": {
           "BibliotecaApp.Etapa4.Application": "1.0.0",
           "BibliotecaApp.Etapa4.Infrastructure": "1.0.0",
+          "MediatR": "12.4.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.8",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.11",
           "Swashbuckle.AspNetCore": "6.6.2"
@@ -41,6 +43,38 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.10.3.0",
             "fileVersion": "1.1000.323.51804"
+          }
+        }
+      },
+      "MediatR/12.4.1": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.4.1.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+        "dependencies": {
+          "MediatR": "12.4.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.1.0.0"
           }
         }
       },
@@ -522,7 +556,8 @@
       },
       "BibliotecaApp.Etapa4.Application/1.0.0": {
         "dependencies": {
-          "BibliotecaApp.Etapa4.Domain": "1.0.0"
+          "BibliotecaApp.Etapa4.Domain": "1.0.0",
+          "MediatR": "12.4.1"
         },
         "runtime": {
           "BibliotecaApp.Etapa4.Application.dll": {
@@ -574,6 +609,27 @@
       "sha512": "sha512-l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
+    },
+    "MediatR/12.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0tLxCgEC5+r1OCuumR3sWyiVa+BMv3AgiU4+pz8xqTc+2q1WbUEXFOr7Orm96oZ9r9FsldgUtWvB2o7b9jDOaw==",
+      "path": "mediatr/12.4.1",
+      "hashPath": "mediatr.12.4.1.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/8.0.8": {
       "type": "package",

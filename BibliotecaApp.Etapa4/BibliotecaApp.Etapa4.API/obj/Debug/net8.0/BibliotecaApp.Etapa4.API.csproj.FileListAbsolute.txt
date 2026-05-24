@@ -86,3 +86,6 @@ C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaA
 C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\obj\Debug\net8.0\BibliotecaApp.Etapa4.API.pdb
 C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\obj\Debug\net8.0\BibliotecaApp.Etapa4.API.genruntimeconfig.cache
 C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\obj\Debug\net8.0\ref\BibliotecaApp.Etapa4.API.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\MediatR.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
