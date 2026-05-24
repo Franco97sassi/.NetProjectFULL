@@ -11,6 +11,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using BibliotecaApp.Etapa4.API.Hubs;
+using BibliotecaApp.Etapa4.API.Grpc;
+using BibliotecaApp.Etapa4.API.Integrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +24,12 @@ builder.Services.AddScoped<GlobalExceptionFilter>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateBookCommand).Assembly));
 builder.Services.AddControllers(options => { options.Filters.Add<GlobalExceptionFilter>(); }); 
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddGrpc();
+builder.Services.AddSignalR();
+builder.Services.AddHttpClient<IOpenLibraryClient, OpenLibraryClient>(client =>
+{
+    client.BaseAddress = new Uri("https://openlibrary.org");
+});
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "BibliotecaApp.Etapa4", Version = "v1" });
@@ -76,16 +85,17 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-
+app.MapGrpcService<BookGrpcService>();
+app.MapHub<LibraryHub>("/hubs/library");
 app.MapGet("/api/health", () => Results.Ok(new
 {
-    stage = 4,
+    stage =6,
     architecture = "clean",
     previousStagesCovered = new[]
     {
-        "Etapa1: fundamentos de C#, OOP y colecciones (base del dominio y handlers)",
-        "Etapa2: JWT, middleware, filtros globales y endpoint minimal API",
-        "Etapa3: persistencia con EF Core y servicios de consulta"
+       "Etapa3: persistencia con EF Core y servicios de consulta",
+        "Etapa4: clean architecture, repositorio, unit of work, MediatR y CQRS",
+        "Etapa6: SignalR, gRPC e integración con APIs de terceros"
     },
     status = "ok"
 }));

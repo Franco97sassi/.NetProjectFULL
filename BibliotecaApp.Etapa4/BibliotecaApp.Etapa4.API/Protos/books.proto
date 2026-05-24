@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "BibliotecaApp.Etapa4.API.Grpc";
+
+package books;
+
+service BookGrpc
+{
+    rpc GetBooks (GetBooksRequest) returns (GetBooksResponse);
+}
+
+message GetBooksRequest { }
+
+message GetBooksResponse
+{
+    repeated BookItem books = 1;
+}
+
+message BookItem
+{
+  string id = 1;
+  string title = 2;
+  string author = 3;
+    int32 stock = 4;
+}
