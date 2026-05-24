@@ -1,0 +1,9 @@
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.csproj.AssemblyReference.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.AssemblyInfoInputs.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.AssemblyInfo.cs
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.csproj.CoreCompileInputs.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa3\obj\Debug\net10.0\BibliotecaApp.Etapa3.sourcelink.json
