@@ -3,33 +3,75 @@ using BibliotecaApp.Etapa3.Data;
 using BibliotecaApp.Etapa3.Filters;
 using BibliotecaApp.Etapa3.Middlewares;
 using BibliotecaApp.Etapa3.Services;
+using BibliotecaApp.Etapa3.Services.Reports;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<BibliotecaDbContext>(opt => opt.UseInMemoryDatabase("BibliotecaDb"));
+var dbProvider = builder.Configuration["Database:Provider"]?.ToLowerInvariant() ?? "inmemory";
+
+builder.Services.AddDbContext<BibliotecaDbContext>(opt =>
+{
+    var sqlServerConnection = builder.Configuration.GetConnectionString("SqlServer");
+    var postgresConnection = builder.Configuration.GetConnectionString("Postgres");
+
+    switch (dbProvider)
+    {
+        case "sqlserver" when !string.IsNullOrWhiteSpace(sqlServerConnection):
+            opt.UseSqlServer(sqlServerConnection);
+            break;
+
+        case "postgres" when !string.IsNullOrWhiteSpace(postgresConnection):
+            opt.UseNpgsql(postgresConnection);
+            break;
+
+        default:
+            opt.UseInMemoryDatabase("BibliotecaDb");
+            break;
+    }
+});
+
 builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<GlobalExceptionFilter>();
 
-builder.Services.AddControllers(options => options.Filters.Add<GlobalExceptionFilter>());
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<GlobalExceptionFilter>();
+});
+
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo { Title = "BibliotecaApp.Etapa3", Version = "v1" });
-    var jwtSecurityScheme = new OpenApiSecurityScheme
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "BibliotecaApp.Etapa3",
+        Version = "v1"
+    });
+
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
-        Scheme = "bearer",
+        Scheme = JwtBearerDefaults.AuthenticationScheme,
         BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
-    };
-    options.AddSecurityDefinition("Bearer", jwtSecurityScheme);
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement { { jwtSecurityScheme, Array.Empty<string>() } });
+        In = ParameterLocation.Header
+    });
+
+    options.AddSecurityRequirement(document =>
+    {
+        return new OpenApiSecurityRequirement
+        {
+            {
+                new OpenApiSecuritySchemeReference("Bearer"),
+                new List<string>()
+            }
+        };
+    });
 });
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "super-secret-key-for-stage3-demo";
@@ -62,15 +104,23 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapGet("/api/health", () => Results.Ok(new { status = "ok", stage = 3, timestamp = DateTime.UtcNow }));
+app.MapGet("/api/health", () => Results.Ok(new
+{
+    status = "ok",
+    stage = 3,
+    dbProvider,
+    timestamp = DateTime.UtcNow
+}));
 
 using var scope = app.Services.CreateScope();
 var db = scope.ServiceProvider.GetRequiredService<BibliotecaDbContext>();
+db.Database.EnsureCreated();
 BibliotecaSeeder.Seed(db);
 
 app.Run();
