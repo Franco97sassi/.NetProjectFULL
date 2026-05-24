@@ -1,0 +1,6 @@
+@BibliotecaApp.Etapa2_HostAddress = http://localhost:5057
+
+GET {{BibliotecaApp.Etapa2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

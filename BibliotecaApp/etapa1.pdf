@@ -1,0 +1,178 @@
+﻿3. Ejecutá la app
+dotnet run
+4. Qué debería pasar
+
+La consola debería mostrar algo parecido a esto:
+
+=== USUARIOS ===
+
+Cliente: Franco - Puntos: 10
+Empleado: Carlos - Cargo: Administrador
+
+=== LIBROS ===
+
+1 - Clean Code - Stock: 3
+2 - C# Avanzado - Stock: 0
+
+=== BÚSQUEDA LINQ ===
+
+Encontrado: Clean Code
+
+=== PRÉSTAMO ===
+
+Préstamo realizado correctamente.
+Proceso de préstamo finalizado.
+
+Stock actual de Clean Code: 2
+5. Probar el parsing
+
+Después debería aparecer:
+
+=== TYPE CASTING / PARSING ===
+
+Ingrese un ID de libro:
+Probá poniendo:
+1
+Resultado esperado
+Libro encontrado: Clean Code
+Ahora probá algo inválido
+
+Ejemplo:
+
+abc
+Resultado esperado
+El valor ingresado no es un número válido.
+Ahí probaste:
+
+✅ TryParse()
+✅ validaciones
+✅ type casting
+✅ null handling
+
+6. Probar excepción personalizada
+
+Ahora modificá esto:
+
+Stock = 3
+
+por:
+
+Stock = 0
+Ejecutá otra vez
+dotnet run
+Resultado esperado
+Error de stock: No hay stock disponible para este libro.
+Ahí probaste:
+
+✅ throw
+✅ custom exception
+✅ try/catch
+✅ herencia de Exception
+
+7. Probar LINQ
+
+Agregá más libros:
+
+Libro libro3 = new()
+{
+    Id = 3,
+    Titulo = "ASP.NET Core",
+    Autor = "Microsoft",
+    Stock = 5,
+    Precio = 30000m
+};
+
+libroService.AgregarLibro(libro3);
+Después probá:
+var ordenados = libroService.OrdenarPorTitulo();
+
+foreach (var libro in ordenados)
+{
+    Console.WriteLine(libro.Titulo);
+}
+Resultado esperado
+ASP.NET Core
+C# Avanzado
+Clean Code
+Ahí probaste:
+
+✅ OrderBy()
+✅ LINQ
+✅ listas genéricas
+
+8. Probar Dictionary
+
+Ya tenés:
+
+Dictionary<int, Libro> diccionarioLibros
+Agregá esto:
+Console.WriteLine(diccionarioLibros[1].Titulo);
+Resultado
+Clean Code
+Ahí probaste:
+
+✅ Dictionary
+✅ búsqueda rápida por clave
+
+9. Probar JSON + Async/Await
+
+Cuando termina la ejecución debería crearse:
+
+libros.json
+
+en la raíz del proyecto.
+
+Abrilo
+
+Deberías ver:
+
+[
+  {
+    "Id": 1,
+    "Titulo": "Clean Code",
+    "Autor": "Robert C. Martin",
+    "Stock": 2,
+    "Precio": 25000,
+    "Activo": true
+  }
+]
+Ahí probaste:
+
+✅ JSON
+✅ serialización
+✅ archivos
+✅ async/await
+✅ File.WriteAllTextAsync()
+
+10. Cómo saber si TODA la Etapa 1 funciona
+Checklist
+POO
+ clases
+ herencia
+ polimorfismo
+ encapsulamiento
+C#
+ métodos
+ propiedades
+ tipos de datos
+LINQ
+ Where
+ OrderBy
+ Any
+ FirstOrDefault
+Generics
+ List<T>
+ Repository<T>
+ Dictionary<int, Libro>
+Exceptions
+ try/catch
+ custom exception
+ throw
+Async
+ async
+ await
+ Task
+Files
+ JSON
+ guardar archivo
+ leer archivo
