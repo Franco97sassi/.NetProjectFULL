@@ -1,11 +1,13 @@
 ﻿using BibliotecaApp.Etapa4.Application.Books;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BibliotecaApp.Etapa4.API.Controllers;
 
 [ApiController]
 [Route("api/books")]
+[Authorize]
 public class BooksController(IMediator mediator) : ControllerBase
 {
     [HttpGet]

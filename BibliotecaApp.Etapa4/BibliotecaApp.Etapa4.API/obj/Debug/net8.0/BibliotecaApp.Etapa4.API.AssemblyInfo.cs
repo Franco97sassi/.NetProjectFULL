@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaApp.Etapa4.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86c172f71f701b2ef05a34b648849252a14e2787")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+291c7f4b7f1ad4e4aa0b01beed99c8c387da32f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaApp.Etapa4.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaApp.Etapa4.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

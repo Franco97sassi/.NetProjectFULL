@@ -89,3 +89,4 @@ C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaA
 C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\MediatR.dll
 C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
