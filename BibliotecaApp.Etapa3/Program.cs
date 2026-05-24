@@ -57,9 +57,10 @@ builder.Services.AddSwaggerGen(options =>
     {
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
-        Scheme = JwtBearerDefaults.AuthenticationScheme,
+        Scheme = "bearer",
         BearerFormat = "JWT",
-        In = ParameterLocation.Header
+        In = ParameterLocation.Header,
+        Description = "Ingrese el token JWT"
     });
 
     options.AddSecurityRequirement(document =>
@@ -73,6 +74,12 @@ builder.Services.AddSwaggerGen(options =>
         };
     });
 });
+
+
+
+
+
+
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "super-secret-key-for-stage3-demo";
 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
