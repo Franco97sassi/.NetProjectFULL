@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BibliotecaApp.Etapa4.Domain/1.0.0": {
+        "runtime": {
+          "BibliotecaApp.Etapa4.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BibliotecaApp.Etapa4.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

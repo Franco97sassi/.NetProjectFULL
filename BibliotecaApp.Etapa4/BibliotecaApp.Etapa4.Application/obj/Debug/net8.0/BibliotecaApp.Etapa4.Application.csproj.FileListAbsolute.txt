@@ -1,0 +1,16 @@
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\bin\Debug\net8.0\BibliotecaApp.Etapa4.Application.deps.json
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\bin\Debug\net8.0\BibliotecaApp.Etapa4.Application.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\bin\Debug\net8.0\BibliotecaApp.Etapa4.Application.pdb
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\bin\Debug\net8.0\BibliotecaApp.Etapa4.Domain.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\bin\Debug\net8.0\BibliotecaApp.Etapa4.Domain.pdb
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.csproj.AssemblyReference.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.AssemblyInfoInputs.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.AssemblyInfo.cs
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.csproj.CoreCompileInputs.cache
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.sourcelink.json
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\Bibliote.4A15B74D.Up2Date
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\refint\BibliotecaApp.Etapa4.Application.dll
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\BibliotecaApp.Etapa4.Application.pdb
+C:\Users\Franc\Desktop\.NetDeveloperRoadmap2026\BibliotecaApp.Etapa4\BibliotecaApp.Etapa4.Application\obj\Debug\net8.0\ref\BibliotecaApp.Etapa4.Application.dll

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BibliotecaApp.Etapa4.API/BibliotecaApp.Etapa4.API.csproj" />
+  <Project Path="BibliotecaApp.Etapa4.Application/BibliotecaApp.Etapa4.Application.csproj" />
+  <Project Path="BibliotecaApp.Etapa4.Domain/BibliotecaApp.Etapa4.Domain.csproj" />
+  <Project Path="BibliotecaApp.Etapa4.Infrastructure/BibliotecaApp.Etapa4.Infrastructure.csproj" />
+</Solution>
