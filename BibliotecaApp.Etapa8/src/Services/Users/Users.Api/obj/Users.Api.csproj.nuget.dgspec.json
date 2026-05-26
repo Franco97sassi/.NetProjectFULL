@@ -1,0 +1,163 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\Services\\Users\\Users.Api\\Users.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\BuildingBlocks\\BibliotecaApp.Etapa8.Contracts\\BibliotecaApp.Etapa8.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\BuildingBlocks\\BibliotecaApp.Etapa8.Contracts\\BibliotecaApp.Etapa8.Contracts.csproj",
+        "projectName": "BibliotecaApp.Etapa8.Contracts",
+        "projectPath": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\BuildingBlocks\\BibliotecaApp.Etapa8.Contracts\\BibliotecaApp.Etapa8.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\BuildingBlocks\\BibliotecaApp.Etapa8.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\Services\\Users\\Users.Api\\Users.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\Services\\Users\\Users.Api\\Users.Api.csproj",
+        "projectName": "Users.Api",
+        "projectPath": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\Services\\Users\\Users.Api\\Users.Api.csproj",
+        "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\Services\\Users\\Users.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\BuildingBlocks\\BibliotecaApp.Etapa8.Contracts\\BibliotecaApp.Etapa8.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Franc\\Desktop\\.NetDeveloperRoadmap2026\\BibliotecaApp.Etapa8\\src\\BuildingBlocks\\BibliotecaApp.Etapa8.Contracts\\BibliotecaApp.Etapa8.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[9.1.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[9.1.1, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
