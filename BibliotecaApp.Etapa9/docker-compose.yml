@@ -1,0 +1,67 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports: ["5672:5672", "15672:15672"]
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  redis:
+    image: redis:7
+    ports: ["6379:6379"]
+
+  catalog-db:
+    image: postgres:16
+    environment: { POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres, POSTGRES_DB: catalogdb }
+    ports: ["5433:5432"]
+
+  loans-db:
+    image: postgres:16
+    environment: { POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres, POSTGRES_DB: loansdb }
+    ports: ["5434:5432"]
+
+  users-db:
+    image: postgres:16
+    environment: { POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres, POSTGRES_DB: usersdb }
+    ports: ["5435:5432"]
+
+  catalog-api:
+    build:
+      context: ./src
+      dockerfile: Services/Catalog/Catalog.Api/Dockerfile
+    environment:
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Username: guest
+      RabbitMq__Password: guest
+      Redis__ConnectionString: redis:6379
+    ports: ["8081:8080"]
+    depends_on: [rabbitmq, redis, catalog-db]
+
+  loans-api:
+    build:
+      context: ./src
+      dockerfile: Services/Loans/Loans.Api/Dockerfile
+    environment:
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Username: guest
+      RabbitMq__Password: guest
+      Redis__ConnectionString: redis:6379
+    ports: ["8082:8080"]
+    depends_on: [rabbitmq, loans-db]
+
+  users-api:
+    build:
+      context: ./src
+      dockerfile: Services/Users/Users.Api/Dockerfile
+    environment:
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Username: guest
+      RabbitMq__Password: guest
+    ports: ["8083:8080"]
+    depends_on: [rabbitmq, users-db]
+
+  notifications-worker:
+    build:
+      context: ./src
+      dockerfile: Services/Notifications/Notifications.Worker/Dockerfile
+    depends_on: [rabbitmq]
