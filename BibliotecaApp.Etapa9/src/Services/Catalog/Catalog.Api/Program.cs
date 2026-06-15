@@ -29,7 +29,8 @@ builder.Services.AddMassTransit(x =>
         cfg.ConfigureEndpoints(context);
     });
 });
-
+builder.Services.AddMemoryCache();
+builder.Services.AddResponseCompression();
 var app = builder.Build();
 app.UseSwagger(); app.UseSwaggerUI();
 app.MapControllers();
